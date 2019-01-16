@@ -1,7 +1,7 @@
 {
   "name": "typesafe-ipc",
   "author": "Kevin O'Rourke <orourke.kevin@gmail.com>",
-  "description": "",
+  "description": "Typesafe Electron IPC modules",
   "version": "1.0.0",
   "types": "dist/index.d.ts",
   "license": "ISC",
@@ -15,8 +15,16 @@
     "process",
     "communication"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orourkek/typesafe-ipc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orourkek/typesafe-ipc/issues"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "electron": "^4.0.1",
