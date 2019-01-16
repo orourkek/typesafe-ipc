@@ -1,0 +1,28 @@
+{
+  "name": "typesafe-ipc",
+  "author": "Kevin O'Rourke <orourke.kevin@gmail.com>",
+  "description": "",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "keywords": [
+    "typesafe",
+    "electron",
+    "ipc",
+    "request",
+    "response",
+    "inter",
+    "process",
+    "communication"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "typescript": "^3.2.2"
+  },
+  "peerDependencies": {
+    "electron": "^4.0.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "strict": true,
+  },
+  "files": [
+    "index.ts"
+  ]
+}
