@@ -18,6 +18,7 @@ Both `ipcMain` and `ipcRenderer` are provided as ready-made modules by `electron
 
 ```typescript
 import * as electron from 'electron';
+import { StrictIpcMain, StrictIpcRenderer } from 'typesafe-ipc';
 
 interface IpcChannels {
   'no-payload': void;
