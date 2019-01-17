@@ -71,12 +71,7 @@ type ListenerRegistrarSignatures<
 type RemoveAllListenersSignatures<
   ChannelMap extends StrictChannelMap
 > = IntersectMethodSignatures<{
-  [C in keyof ChannelMap]: (
-    channel: C,
-    listener: ChannelMap[C] extends void ?
-      (event: electron.Event) => void :
-      (event: electron.Event, payload: ChannelMap[C]) => void
-  ) => void
+  [C in keyof ChannelMap]: (channel: C) => void
 }>;
 
 /**
