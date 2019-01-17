@@ -119,4 +119,4 @@ export type StrictIpcRenderer<ChannelMap extends StrictChannelMap> = Omit<
  */
 export type StrictIpcMain<
   ChannelMap extends StrictChannelMap
-> = StrictIpcModule<ChannelMap, electron.IpcMain>
+> = StrictIpcModule<ChannelMap, electron.IpcMain>;

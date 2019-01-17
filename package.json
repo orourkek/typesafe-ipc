@@ -24,10 +24,12 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build"
+    "lint": "tslint --project ./ --format stylish",
+    "prepublish": "yarn lint && yarn build"
   },
   "devDependencies": {
     "electron": "^4.0.1",
+    "tslint": "^5.12.1",
     "typescript": "^3.2.2"
   },
   "peerDependencies": {

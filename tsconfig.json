@@ -7,7 +7,7 @@
     "removeComments": true,
     "strict": true,
   },
-  "files": [
-    "src/index.ts"
+  "include": [
+    "src/**/*"
   ]
 }
