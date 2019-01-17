@@ -3,6 +3,7 @@
     "indent": [true, "spaces", 2],
     "interface-name": false,
     "max-line-length": { "options": [80] },
+    "object-literal-sort-keys": false,
     "quotemark": [true, "single"],
     "trailing-comma": false
   },
