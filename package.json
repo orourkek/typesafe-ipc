@@ -4,6 +4,9 @@
   "description": "Typesafe Electron IPC modules",
   "version": "1.0.3",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "license": "ISC",
   "keywords": [
     "typesafe",
