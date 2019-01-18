@@ -14,6 +14,8 @@ $ yarn add typesafe-actions
 
 ## Usage
 
+***Note: see the [provided example app](./examples/basic/README.md) to see `typesafe-ipc` being used inside an electron app.***
+
 Both `ipcMain` and `ipcRenderer` are provided by `electron` as modules that allow sending and receiving arbitrary payloads over arbitrary channels. This library utilizes type assertions to add strict typing to various methods in those modules, which provides compile-time confidence that your code isn't sending or receiving arbitrary ipc messages.
 
 Using `typed-ipc` requires two things:
