@@ -1,0 +1,17 @@
+{
+  "name": "typesafe-ipc-basic-example",
+  "author": "Kevin O'Rourke <orourke.kevin@gmail.com>",
+  "description": "Example app for typesafe-ipc",
+  "license": "ISC",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node fuse",
+    "start": "electron dist/main.js"
+  },
+  "dependencies": {
+    "electron": "^4.0.1",
+    "fuse-box": "^3.6.0",
+    "typesafe-ipc": "file:../../"
+  }
+}

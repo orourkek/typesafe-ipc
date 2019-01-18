@@ -1,0 +1,9 @@
+.container {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#button {
+  padding: 1em 2em;
+  font-size: 20px;
+}
