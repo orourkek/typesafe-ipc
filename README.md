@@ -71,8 +71,8 @@ interface IpcChannelMap {
 }
 ```
 
-## Motivation
+## Motivation & Philosophy
 
-Having worked on a few different electron projects, I noticed that the number of ipc messages and the complexity of managing them grew at least linearly alongside the rest of the app. Without type safety, Electron's `ipcMain` and `ipcRenderer` allow developers to send messages to/from any channel name and with any payload type. As the app grows and inevitable refactors happen, the lack of type safety around both sending and receiving these messages becomes an annoyance at best and a liability at worst.
+Having worked on a few different electron projects I noticed that as the app grew, managing ipc messaging became increasingly complex. Without type safety, Electron's `ipcMain` and `ipcRenderer` modules allow developers to send messages to/from any channel name and with any payload type. As the app grows and inevitable refactors happen, the lack of type safety around both sending and receiving these messages becomes an annoyance at best and a liability at worst.
 
-Enter `typesafe-ipc`, which aims to provide a lightweight, *type-only* solution to this problem by providing strict typing to the ipc module methods.
+Enter `typesafe-ipc`, which aims to provide a lightweight, *type-only* solution to this problem by providing strict typing to ipc module methods.
