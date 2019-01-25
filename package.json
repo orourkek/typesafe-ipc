@@ -9,7 +9,9 @@
   ],
   "license": "ISC",
   "keywords": [
+    "typescript",
     "typesafe",
+    "type",
     "electron",
     "ipc",
     "request",
