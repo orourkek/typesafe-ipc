@@ -6,10 +6,10 @@ A type-only library for adding strict type safety to Electron's IPC modules
 
 ```
 // NPM
-$ npm install typesafe-actions
+$ npm install typesafe-ipc
 
 // YARN
-$ yarn add typesafe-actions
+$ yarn add typesafe-ipc
 ```
 
 ## Usage
