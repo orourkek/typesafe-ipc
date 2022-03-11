@@ -22,7 +22,7 @@ type Omit<T, U> = Pick<T, Exclude<keyof T, U>>;
 type IntersectMethodSignatures<S> = UnionToIntersection<S[keyof S]>;
 
 /**
- * Intersection of stricly-typed `send` method signatures
+ * Intersection of strictly-typed `send` method signatures
  *
  * Note: signature is the same for `send`, `sendSync`, and `sendToHost`
  */
@@ -37,7 +37,7 @@ type SendMethodSignatures<
 }>;
 
 /**
- * Intersection of stricly-typed `sendTo` method signatures
+ * Intersection of strictly-typed `sendTo` method signatures
  */
 type SendToMethodSignatures<
   ChannelMap extends StrictChannelMap
@@ -50,7 +50,7 @@ type SendToMethodSignatures<
 }>;
 
 /**
- * Intersection of stricly-typed signatures for methods that register listeners
+ * Intersection of strictly-typed signatures for methods that register listeners
  *
  * Note: signature is the same for `on`, `once`, and `removeListener`
  */
@@ -66,7 +66,7 @@ type ListenerRegistrarSignatures<
 }>;
 
 /**
- * Intersection of stricly-typed `removeAllListeners` method signatures
+ * Intersection of strictly-typed `removeAllListeners` method signatures
  */
 type RemoveAllListenersSignatures<
   ChannelMap extends StrictChannelMap
