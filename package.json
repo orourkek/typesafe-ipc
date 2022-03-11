@@ -33,11 +33,11 @@
     "prepublish": "yarn lint && yarn build"
   },
   "devDependencies": {
-    "electron": "^4.0.1",
+    "electron": "^11.5.0",
     "tslint": "^5.12.1",
     "typescript": "^3.2.2"
   },
   "peerDependencies": {
-    "electron": "^4.0.1"
+    "electron": "^11.5.0"
   }
 }
