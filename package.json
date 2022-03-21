@@ -30,7 +30,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project ./ --format stylish",
-    "prepublish": "yarn lint && yarn build"
+    "prepublishOnly": "yarn lint && yarn build"
   },
   "devDependencies": {
     "electron": "^4.0.1",
