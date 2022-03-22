@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "ES7",
+    "target": "ES6",
     "jsx": "react",
     "importHelpers": true,
     "emitDecoratorMetadata": true,
