@@ -10,11 +10,11 @@ Like all electron apps this one has code for the main process ([`main.ts`](./src
 
 ```
 // install dependencies:
-$ yarn
+$ npm i
 
 // build the app:
-$ yarn build
+$ npm run build
 
 // run it:
-$ yarn start
+$ npm start
 ```
