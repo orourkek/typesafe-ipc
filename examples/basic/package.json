@@ -10,7 +10,7 @@
     "start": "electron dist/main.js"
   },
   "dependencies": {
-    "electron": "^4.0.1",
+    "electron": "^4.2.12",
     "fuse-box": "^3.6.0",
     "typesafe-ipc": "file:../../"
   }
