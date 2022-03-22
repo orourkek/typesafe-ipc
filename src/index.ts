@@ -108,6 +108,13 @@ export type StrictIpcRenderer<ChannelMap extends StrictChannelMap> = Omit<
   sendTo: SendToMethodSignatures<ChannelMap>;
   sendToHost: SendMethodSignatures<ChannelMap>;
 };
+  // } & (
+//   electron.IpcRenderer extends {
+//     postMessage: (channel: string, message: any) => any;
+//   }
+//   ? { foo: SendMethodSignatures<ChannelMap>; }
+//   : { bar: SendMethodSignatures<ChannelMap>; }
+// );
 
 /**
  * Type definition used to override default IpcMain with strict typing
@@ -115,3 +122,19 @@ export type StrictIpcRenderer<ChannelMap extends StrictChannelMap> = Omit<
 export type StrictIpcMain<
   ChannelMap extends StrictChannelMap
 > = StrictIpcModule<ChannelMap, electron.IpcMain>;
+
+// interface IpcChannels {
+//   'button-click': { count: number };
+//   'foo': number;
+// }
+
+// const ipcRenderer: StrictIpcRenderer<IpcChannels> = electron.ipcRenderer;
+// const ipcMain: StrictIpcMain<IpcChannels> = electron.ipcMain;
+
+// ipcMain.on('button-click', (event, payload) => {});
+// ipcRenderer.send('button-click', { count: 1 });
+// ipcRenderer.send('button-click', { count: 1 });
+// ipcRenderer.;
+// ipcRenderer.sendSync('foo', 4);
+// ipcRenderer.on('button-click', () => {});
+// ipcRenderer.on('foo', (event, payload) => {});

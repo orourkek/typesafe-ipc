@@ -29,13 +29,15 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "tslint --project ./ --format stylish",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
     "prepublishOnly": "npm run lint && npm run build"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
     "electron": "^17",
-    "tslint": "^5.12.1",
-    "typescript": "^3.2.2"
+    "eslint": "^8.11.0",
+    "typescript": "^4"
   },
   "peerDependencies": {
     "electron": "^4.0.1"
