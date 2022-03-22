@@ -33,7 +33,7 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "electron": "^4.0.1",
+    "electron": "^17",
     "tslint": "^5.12.1",
     "typescript": "^3.2.2"
   },

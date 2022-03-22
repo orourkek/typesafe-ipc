@@ -85,7 +85,7 @@ type RemoveAllListenersSignatures<
  */
 type StrictIpcModule<
   ChannelMap extends StrictChannelMap,
-  LooseModule extends electron.EventEmitter
+  LooseModule extends NodeJS.EventEmitter
 > = Omit<
   LooseModule,
   'on' | 'once' | 'removeAllListeners' | 'removeListener'
